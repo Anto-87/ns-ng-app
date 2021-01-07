@@ -1,0 +1,16 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" loaded="onLoaded" navigatedTo="onNavigatedTo">
+  <FlexboxLayout class="page">
+    <StackLayout class="form">
+        <Label text="HoverBrain" textWrap="true" class="header"></Label>
+        <StackLayout class="input-field">
+            <TextField class="input" hint="Username" [(ngModel)]="user.username"></TextField>              
+            <StackLayout class="hr-light"></StackLayout>                            
+        </StackLayout>
+        <StackLayout class="input-field">
+          <TextField class="input" hint="Password" secure="true" [(ngModel)]="user.password"></TextField>                    
+          <StackLayout class="hr-light"></StackLayout>
+        </StackLayout>
+        <Button text="Login" (tap)="submit()" class="btn-primary"></Button>        
+    </StackLayout>
+  </FlexboxLayout>
+</Page>
